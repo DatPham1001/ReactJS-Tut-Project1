@@ -1,0 +1,89 @@
+.modal-contents{
+    background-color: white;
+    height: auto;
+    opacity: 1;
+}
+.btn1{
+    background-color: orange;
+    border-radius: 10px;
+    border: none;
+    padding: 3px 6px 3px 6px ;
+    color: black;
+}
+.btn{
+    background-color: orange;
+    color: black;
+    border: none;
+}
+.modal-content{
+    width: 100%;
+}
+.add-product-bar{
+    width: 100%;
+    box-shadow: none;
+    border-radius: 10px;
+    background-color: white;
+    border: 1px solid;
+    padding: 3px 6px 3px 6px ;
+}
+.modal-body{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.modal-detail{
+    width: 100%;
+    margin-bottom: 15px;
+}
+.category-select-box{
+}
+.select-font{
+    font-size: 18px;
+}
+
+@media (min-width: 992px){
+.modal-lg-add {
+    max-width: 70%;
+}}
+.image-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    padding: 3px;
+    border-width: 10px;
+    border-radius: 10px;
+}
+.product-detail-header{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.buy-btn{
+    border-radius: 10px;
+    background-color: orange;
+    border:none;
+    box-shadow: none;
+    width: 100%;
+    padding: 4px;
+    height: 60px;
+    
+}
+.buy-btn:hover{
+    cursor: pointer;
+}
+.sold{
+    width: 100%;
+}
+.delete-btn-container{
+    right: 0;
+}
+.delete-btn{
+    border-radius: 10px;
+    background-color: #f26b6b;
+    border:none;
+    box-shadow: none;
+    position: relative;
+    right:0;
+
+}
+.delete-btn:hover{
+    cursor: pointer;
+}

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import { withRouter } from 'react-router-dom';
 import Header from './Header';
 
 class DashBoard extends Component {
@@ -16,4 +15,4 @@ class DashBoard extends Component {
     }
 }
 
-export default withRouter(DashBoard);
+export default DashBoard;

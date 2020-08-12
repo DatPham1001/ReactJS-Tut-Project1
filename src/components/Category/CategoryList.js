@@ -1,8 +1,8 @@
+import Axios from 'axios';
 import React, { Component } from 'react';
 import Header from '../Header';
-import Axios from 'axios';
-import './style.css';
 import CategoryDetail from './CategoryDetail';
+import './style.css';
 const api = Axios.create({
     baseURL: 'http://localhost:8080/admin/'
 })
@@ -12,9 +12,7 @@ class CategoryList extends Component {
     constructor(props) {
         super(props);
         //Get all categories API
-        api.get('/categories').then(res => {
-            this.setState({ categories: res.data })
-        })
+
         this.state = {
             categories: [],
             categoryDetail: {
@@ -26,8 +24,13 @@ class CategoryList extends Component {
 
     }
     // document.querySelector('.bg-modal').style.display = 'flex';
-
+    componentDidMount() {
+        api.get('/categories').then(res => {
+            this.setState({ categories: res.data })
+        })
+    }
     categoryClicked = (index) => {
+        
         document.querySelector('.bg-modal').style.display = 'flex';
         // console.log(this.state.categories[index]);
         this.setState({
@@ -45,12 +48,10 @@ class CategoryList extends Component {
         var categoryDetail = this.state.categoryDetail;
         let categoriesName = categories.map((category, index) => {
             return (
-                <div>
-                    <li className="category-name" value={index} onClick={e => this.categoryClicked(e.target.value)}>
-                        {category.name}
-                    </li>
 
-                </div>
+                <li className="category-name" value={index} onClick={(e) => this.categoryClicked(e.target.value)}>
+                    {category.name}
+                </li>
             )
         });
         return (

@@ -9,7 +9,7 @@ class CategoryDetail extends Component {
             <div>
                 <div className="bg-modal">
                     <div className="modal-content">
-                        <img className="x-icon"
+                        <img alt='' className="x-icon"
                             src="https://cdn3.iconfinder.com/data/icons/ui-icons-5/16/cross-small-01-512.png"
                             onClick={this.closeModal}></img>
                         <div className="container">
